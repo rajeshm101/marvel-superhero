@@ -45,9 +45,10 @@ export class AppComponent implements OnInit {
       console.log("already filtered");
       return;
     }
+    
 
     //Hint: Uncomment the below section to fix the search box!"
-    
+    /*
     this.isLoading = true;
     this.lastFilteredItem = this.filter;
        let response : MarvelResponse<Comic> = await this._marvelService.getComics(this.shown, this.filter, this. year);
@@ -61,8 +62,9 @@ export class AppComponent implements OnInit {
     this.total = response.data.total;
     this.attribution = response.attributionHTML;
     this.isLoading = false
-     
+     */
   }
+  
   openModal(index) {
     this.selectedComic = this.comics[index]
     this.staticModal.show()
