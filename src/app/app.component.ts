@@ -12,7 +12,7 @@ import { MarvelResponse } from './models/marvel.model';
   ]
 })
 export class AppComponent implements OnInit {
-  title: string = "Search your Marvel Comics2ewr";
+  title: string = "search your fave marvel comics";
   attribution : string;
   isLoading: boolean = false;
   comics : Comic[] = [];
