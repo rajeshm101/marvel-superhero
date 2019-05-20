@@ -29,9 +29,9 @@ export class MarvelService {
         if (prefix) {
             requestUrl += "&titleStartsWith=" + prefix;
         }
-        // if (year > 0) {
-        //     requestUrl += "&startYear=" + year;
-        // }
+         if (year > 0) {
+             requestUrl += "&startYear=" + year;
+         }
         let response = await this._httpService.get(requestUrl).toPromise();
         return response.json();
     }
